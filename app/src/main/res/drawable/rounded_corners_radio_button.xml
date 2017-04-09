@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <solid android:color="@color/colorRadioQuestion" />
+
+   <padding
+       android:left="@dimen/rounded_corners_padding"
+       android:right="@dimen/rounded_corners_padding"
+       android:top="@dimen/rounded_corners_padding"
+       android:bottom="@dimen/rounded_corners_padding"/>
+
+
+   <!-- <corners android:radius="5dp" /> -->
+
+   <corners
+       android:bottomRightRadius="@dimen/rounded_corners_radius"
+       android:bottomLeftRadius="@dimen/rounded_corners_radius"
+       android:topLeftRadius="@dimen/rounded_corners_radius"
+       android:topRightRadius="@dimen/rounded_corners_radius"/>
+</shape>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityStyle"
+    tools:context="com.example.android.quizapp.TextQuestionActivity">
+
+    <RelativeLayout style="@style/ActivityStyle.Margin.RoundedCorners">
+
+        <!-- Horizontal Linear Layout with the two buttons -->
+        <LinearLayout
+            android:id="@+id/question_buttons"
+            style="@style/LinearLayout.Horizontal.Buttons">
+
+            <Button
+                android:id="@+id/submit_button"
+                style="@style/QuestionButtonStyle.Text"
+                android:onClick="submit"
+                android:text="@string/submit" />
+
+            <Button
+                android:id="@+id/continue_button"
+                style="@style/QuestionButtonStyle.Text"
+                android:onClick="continueQuiz"
+                android:text="@string/continueQuiz" />
+
+        </LinearLayout>
+
+        <!-- Separator line between the buttons and the question -->
+        <View
+            android:id="@+id/separator_line"
+            style="@style/SeparatorStyle"
+            android:layout_above="@id/question_buttons" />
+
+        <!-- Scrollview containing the question -->
+        <ScrollView
+            style="@style/ScrollViewStyle.Question"
+            android:layout_above="@id/separator_line">
+
+            <LinearLayout style="@style/LinearLayout.Vertical">
+
+                <TextView
+                    android:id="@+id/question_text_view"
+                    style="@style/Text.Question.Text" />
+
+                <LinearLayout
+                    style="@style/LinearLayout.Vertical"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/question_answer_edit_text"
+                        style="@style/EditTextStyle"
+                        android:hint="@string/hint" />
+
+                    <TextView
+                        android:id="@+id/answer_text_view"
+                        style="@style/Text.CorrectAnswer" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

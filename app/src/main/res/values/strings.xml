@@ -1,0 +1,26 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">>
+    <string name="app_name">"European History Quiz"</string>
+
+    <string name="title">"European History Quiz"</string>
+    <string name="intro">"When did the First Balkan War start? Which was the deadliest battle of the Second World War? From ancient Greece to modern politics, journey through European history in this quiz."</string>
+
+    <string name="question">"Question "</string>
+    <string name="question_array_identifier">"question_"</string>
+
+    <string name="submit_toast">"You have already submitted your answer."</string>
+    <string name="continue_toast">"In order to continue you must first submit your answer."</string>
+    <string name="finish_toast">"Your score is <xliff:g id="score" example="7">%d</xliff:g>/8.\nThank you for taking this quiz!"</string>
+    <string name="correct_answer">"The correct answer is: <xliff:g id="answer" example="1683">%s</xliff:g>"</string>
+    <string name="final_score">"Your score is <xliff:g id="score" example="7">%d</xliff:g>/8."</string>
+
+    <string name="logo">"logo"</string>
+    <string name="result_icon">"result"</string>
+    <string name="start">"Start Quiz"</string>
+    <string name="submit">"Submit"</string>
+    <string name="continueQuiz">"Continue"</string>
+    <string name="finish">"Finish"</string>
+    <string name="restart">"Return"</string>
+    <string name="hint">"Answer here"</string>
+    <string name="results">"Results"</string>
+    <string name="congrats">"Congratulations! "</string>
+</resources>

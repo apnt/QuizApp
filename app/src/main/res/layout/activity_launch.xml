@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityStyle.Margin"
+    tools:context="com.example.android.quizapp.LaunchActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/name_text_view"
+        style="@style/Text.Title"
+        android:text="@string/title" />
+
+    <!-- ImageView with logo -->
+    <ImageView
+        android:id="@+id/image_logo"
+        style="@style/ImageStyle"
+        android:layout_below="@id/name_text_view"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo" />
+
+    <!-- Start button -->
+    <Button
+        android:id="@+id/start_button"
+        style="@style/NormalButtonStyle.Start"
+        android:onClick="startQuiz"
+        android:text="@string/start" />
+
+    <!-- Scrollview with indroduction text -->
+    <ScrollView
+        style="@style/ScrollViewStyle.Margin"
+        android:layout_above="@id/start_button"
+        android:layout_below="@id/image_logo">
+
+        <TextView
+            style="@style/Text.Description"
+            android:text="@string/intro" />
+
+    </ScrollView>
+
+</RelativeLayout>

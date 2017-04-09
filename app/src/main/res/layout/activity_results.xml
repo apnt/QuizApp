@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollViewStyle"
+    tools:context="com.example.android.quizapp.ResultsActivity">
+
+    <LinearLayout style="@style/LinearLayout.Vertical.Activity" >
+
+        <!-- Title textview -->
+        <TextView
+            style="@style/Text.Title.Results"
+            android:text="@string/results" />
+
+        <!-- Linear Layout containing the questions and the result for each question -->
+        <LinearLayout style="@style/LinearLayout.Vertical">
+
+            <!-- Linear Layout containing one question and the result for this question -->
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Dark">
+
+                <TextView
+                    android:id="@+id/question_1_text"
+                    style="@style/Text.Results.Dark" />
+
+                <ImageView
+                    android:id="@+id/question_1_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Light">
+
+                <TextView
+                    android:id="@+id/question_2_text"
+                    style="@style/Text.Results.Light" />
+
+                <ImageView
+                    android:id="@+id/question_2_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Dark">
+
+                <TextView
+                    android:id="@+id/question_3_text"
+                    style="@style/Text.Results.Dark" />
+
+                <ImageView
+                    android:id="@+id/question_3_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Light">
+
+                <TextView
+                    android:id="@+id/question_4_text"
+                    style="@style/Text.Results.Light" />
+
+                <ImageView
+                    android:id="@+id/question_4_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Dark">
+
+                <TextView
+                    android:id="@+id/question_5_text"
+                    style="@style/Text.Results.Dark" />
+
+                <ImageView
+                    android:id="@+id/question_5_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Light">
+
+                <TextView
+                    android:id="@+id/question_6_text"
+                    style="@style/Text.Results.Light" />
+
+                <ImageView
+                    android:id="@+id/question_6_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Dark">
+
+                <TextView
+                    android:id="@+id/question_7_text"
+                    style="@style/Text.Results.Dark" />
+
+                <ImageView
+                    android:id="@+id/question_7_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.Horizontal.Results.Light">
+
+                <TextView
+                    android:id="@+id/question_8_text"
+                    style="@style/Text.Results.Light" />
+
+                <ImageView
+                    android:id="@+id/question_8_image"
+                    style="@style/ResultIconStyle"
+                    android:contentDescription="@string/result_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/final_result_text"
+            style="@style/Text.Final" />
+
+        <Button
+            style="@style/NormalButtonStyle.Return"
+            android:onClick="returnToStart"
+            android:text="@string/restart" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Activity styles. -->
+    <style name="ActivityStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Activity style with margins. -->
+    <style name="ActivityStyle.Margin">
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <!-- Activity style with margins and rounded corners. -->
+    <style name="ActivityStyle.Margin.RoundedCorners">
+        <item name="android:background">@drawable/rounded_corners</item>
+    </style>
+
+    <!-- Linear Layouts style. -->
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Horizontal Linear Layout style. -->
+    <style name="LinearLayout.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Buttons horizontal Linear Layout style. -->
+    <style name="LinearLayout.Horizontal.Buttons">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!-- Basic results horizontal Linear Layout style. -->
+    <style name="LinearLayout.Horizontal.Results">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Dark results Horizontal Linear Layout style. -->
+    <style name="LinearLayout.Horizontal.Results.Dark">
+        <item name="android:background">@color/colorResultDark</item>
+    </style>
+
+    <!-- Light results Horizontal Linear Layout style. -->
+    <style name="LinearLayout.Horizontal.Results.Light">
+        <item name="android:background">@color/colorResultLight</item>
+    </style>
+
+    <!-- Vertical Linear Layout style. -->
+    <style name="LinearLayout.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Vertical Linear Layout style for when the whole activity is a linear layout. -->
+    <style name="LinearLayout.Vertical.Activity">
+        <item name="android:paddingBottom">@dimen/activity_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_padding</item>
+    </style>
+
+    <!-- Basic text styles -->
+    <style name="Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Text style for the title -->
+    <style name="Text.Title">
+        <item name="android:layout_marginBottom">@dimen/view_vertical_small_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_no_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Text style for the results' title -->
+    <style name="Text.Title.Results">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Text style for the app's description -->
+    <style name="Text.Description">
+        <item name="android:layout_marginBottom">@dimen/view_no_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_small_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_small_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_no_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/description_text_size</item>
+    </style>
+
+    <!-- Basic text style for the questions' text -->
+    <style name="Text.Question">
+        <item name="android:paddingBottom">@dimen/question_padding</item>
+        <item name="android:paddingLeft">@dimen/question_padding</item>
+        <item name="android:paddingRight">@dimen/question_padding</item>
+        <item name="android:paddingTop">@dimen/question_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+    </style>
+
+    <!-- Text style for Radio questions -->
+    <style name="Text.Question.Radio">
+        <item name="android:background">@drawable/rounded_corners_radio</item>
+    </style>
+
+    <!-- Text style for Check questions -->
+    <style name="Text.Question.Check">
+        <item name="android:background">@drawable/rounded_corners_check</item>
+    </style>
+
+    <!-- Text style for Text questions -->
+    <style name="Text.Question.Text">
+        <item name="android:background">@drawable/rounded_corners_text</item>
+    </style>
+
+    <!-- Text style for the correct answer's text -->
+    <style name="Text.CorrectAnswer">
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- Basic text style for the result's text -->
+    <style name="Text.Results">
+        <item name="android:layout_width">@dimen/weighted_views_dimension</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:paddingBottom">@dimen/results_padding</item>
+        <item name="android:paddingLeft">@dimen/results_padding</item>
+        <item name="android:paddingRight">@dimen/results_padding</item>
+        <item name="android:paddingTop">@dimen/results_padding</item>
+        <item name="android:textSize">@dimen/results_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Light text style for the result's text -->
+    <style name="Text.Results.Light">
+        <item name="android:textColor">@color/colorTextDark</item>
+    </style>
+
+    <!-- Dark text style for the result's text -->
+    <style name="Text.Results.Dark">
+        <item name="android:textColor">@color/colorTextLight</item>
+    </style>
+
+    <!-- Text style for the final score's text -->
+    <style name="Text.Final">
+        <item name="android:paddingBottom">@dimen/results_padding</item>
+        <item name="android:paddingLeft">@dimen/results_padding</item>
+        <item name="android:paddingRight">@dimen/results_padding</item>
+        <item name="android:paddingTop">@dimen/results_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/final_score_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Standard Buttons styles. -->
+    <style name="NormalButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorButtonNormal</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+    </style>
+
+    <!-- Style for the start button -->
+    <style name="NormalButtonStyle.Start">
+        <item name="android:layout_marginBottom">@dimen/view_no_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_no_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_no_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_small_margin</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- Style for the return button -->
+    <style name="NormalButtonStyle.Return">
+        <item name="android:layout_marginBottom">@dimen/view_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_margin</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Basic style for the question buttons (submit and continue) -->
+    <style name="QuestionButtonStyle">
+        <item name="android:layout_width">@dimen/weighted_views_dimension</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/view_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_margin</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Style for the radio question buttons -->
+    <style name="QuestionButtonStyle.Radio">
+        <item name="android:background">@drawable/rounded_corners_radio_button</item>
+    </style>
+
+    <!-- Style for the check question buttons -->
+    <style name="QuestionButtonStyle.Check">
+        <item name="android:background">@drawable/rounded_corners_check_button</item>
+    </style>
+
+    <!-- Style for the text question buttons -->
+    <style name="QuestionButtonStyle.Text">
+        <item name="android:background">@drawable/rounded_corners_text_button</item>
+    </style>
+
+    <!-- Style for the radiogroup in radio questions -->
+    <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Style for the RadioButtons and CheckBoxes holding the questions' options -->
+    <style name="QuestionOptionButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/view_vertical_small_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_small_margin</item>
+        <item name="android:paddingLeft">@dimen/option_buttons_left_padding</item>
+        <item name="android:paddingRight">@dimen/option_buttons_right_padding</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Style for the top option RadioButtons and CheckBoxes -->
+    <style name="QuestionOptionButton.Top">
+        <item name="android:layout_marginTop">@dimen/view_vertical_margin</item>
+    </style>
+
+    <!-- Style for the bottom option RadioButtons and CheckBoxes -->
+    <style name="QuestionOptionButton.Bottom">
+        <item name="android:layout_marginBottom">@dimen/view_vertical_margin</item>
+    </style>
+
+    <!-- Basic Scrollview style. -->
+    <style name="ScrollViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Question in a Scrollview style. -->
+    <style name="ScrollViewStyle.Question">
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <!-- Scrollview with margins style. -->
+    <style name="ScrollViewStyle.Margin">
+        <item name="android:layout_marginBottom">@dimen/view_vertical_small_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_no_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_no_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_small_margin</item>
+    </style>
+
+    <!-- Separator line style. -->
+    <style name="SeparatorStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/separator_line_width</item>
+        <item name="android:layout_marginBottom">@dimen/view_no_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_no_margin</item>
+        <item name="android:background">@color/colorBorder</item>
+    </style>
+
+    <!-- Style for the EditText in text questions. -->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/edit_text_margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/edit_text_margin_large</item>
+        <item name="android:layout_marginRight">@dimen/edit_text_margin_large</item>
+        <item name="android:layout_marginTop">@dimen/edit_text_margin_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!-- Style for the logo image. -->
+    <style name="ImageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/image_height</item>
+        <item name="android:layout_marginBottom">@dimen/view_vertical_small_margin</item>
+        <item name="android:layout_marginLeft">@dimen/view_horizontal_small_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_horizontal_small_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_vertical_small_margin</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!-- Style for the results icons. -->
+    <style name="ResultIconStyle">
+        <item name="android:layout_width">@dimen/icon_height</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginBottom">@dimen/result_icons_margin</item>
+        <item name="android:layout_marginLeft">@dimen/result_icons_margin</item>
+        <item name="android:layout_marginRight">@dimen/result_icons_margin</item>
+        <item name="android:layout_marginTop">@dimen/result_icons_margin</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+</resources>

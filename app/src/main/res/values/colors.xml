@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorAccent">#ff4081</color>
+
+    <color name="android_default">#fafafa</color>
+
+    <color name="colorButtonNormal">#607d8b</color>         <!-- Standard buttons color -->
+    <color name="colorQuestionBackground">#cfd8dc</color>   <!-- Color for background of the questions -->
+    <color name="colorRadioQuestion">#616161</color>        <!-- Color for RadioButton questions -->
+    <color name="colorCheckQuestion">#009688</color>        <!-- Color for CheckBox questions -->
+    <color name="colorTextQuestion">#5c6bc0</color>         <!-- Color for Text questions -->
+    <color name="colorResultDark">#37474f</color>           <!-- Dark background color for the results screen -->
+    <color name="colorResultLight">#b0bec5</color>          <!-- Light background color for the results screen -->
+
+    <color name="colorBorder">#263238</color>
+
+    <color name="colorCorrect">#a5d6a7</color>  <!-- Green color for correct answers -->
+    <color name="colorWrong">#ef9a9a</color>    <!-- Red color for wrong answers -->
+
+    <color name="colorTextLight">#fafafa</color>    <!-- Light color for text -->
+    <color name="colorTextDark">#212121</color>     <!-- Dark color for text -->
+</resources>

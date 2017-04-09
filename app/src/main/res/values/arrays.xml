@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- In each array:
+         The first element is the type of the question (radio, check or text).
+         The second element is the question.
+         If the type is "text" then the third element is the correct answer.
+         If the type is "check" or "radio" the third to sixth elements are the options
+         and the seventh is the index of the correct answer in a 4-element array. -->
+    <string-array name="question_1">
+        <item>"radio"</item>
+        <item>"Who were the key opponents in the Peloponnesian War (431 &#8211; 404 BC)?"</item>
+        <item>"Sparta and Macedon"</item>
+        <item>"Athens and Corinth"</item>
+        <item>"Sparta and Corinth"</item>
+        <item>"Athens and Sparta"</item>
+        <item>"3"</item>
+    </string-array>
+
+    <string-array name="question_2">
+        <item>"text"</item>
+        <item>"What year did the First Balkan War start?"</item>
+        <item>"1912"</item>
+    </string-array>
+
+    <string-array name="question_3">
+        <item>"check"</item>
+        <item>"Which of the following countries formed the Triple Entente during the First World War?"</item>
+        <item>"Great Britain"</item>
+        <item>"Russia"</item>
+        <item>"United States of America"</item>
+        <item>"France"</item>
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"3"</item>
+    </string-array>
+
+    <string-array name="question_4">
+        <item>"text"</item>
+        <item>"What year did the second Ottoman siege of Vienna take place?"</item>
+        <item>"1683"</item>
+    </string-array>
+
+    <string-array name="question_5">
+        <item>"radio"</item>
+        <item>"What battle finally ended Napoleon's power and resulted in his banishment to St. Helena?"</item>
+        <item>"Battle of Austerlitz"</item>
+        <item>"Battle of Waterloo"</item>
+        <item>"Battle of Borodino"</item>
+        <item>"Battle of Trafalgar"</item>
+        <item>"1"</item>
+    </string-array>
+
+    <string-array name="question_6">
+        <item>"radio"</item>
+        <item>"Which was the deadliest battle of the Second World War?"</item>
+        <item>"Battle of Stalingrad"</item>
+        <item>"Battle of Moscow"</item>
+        <item>"Battle of Berlin"</item>
+        <item>"Battle of Kursk"</item>
+        <item>"0"</item>
+    </string-array>
+    <string-array name="question_7">
+        <item>"check"</item>
+        <item>"Which of the following battles involved Romans?"</item>
+        <item>"Battle of Cannae"</item>
+        <item>"Battle of Raphia"</item>
+        <item>"Battle of Pydna"</item>
+        <item>"Battle of Ipsus"</item>
+        <item>"0"</item>
+        <item>"2"</item>
+    </string-array>
+
+    <string-array name="question_8">
+        <item>"radio"</item>
+        <item>"Which of the following countries joined the European Union in 1995?"</item>
+        <item>"Germany"</item>
+        <item>"Austria"</item>
+        <item>"Greece"</item>
+        <item>"Spain"</item>
+        <item>"1"</item>
+    </string-array>
+</resources>
+
