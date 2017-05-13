@@ -7,12 +7,14 @@
     <string name="question">"Question "</string>
     <string name="question_array_identifier">"question_"</string>
 
+    <!-- Strings for toasts and correct answers -->
     <string name="submit_toast">"You have already submitted your answer."</string>
     <string name="continue_toast">"In order to continue you must first submit your answer."</string>
     <string name="finish_toast">"Your score is <xliff:g id="score" example="7">%d</xliff:g>/8.\nThank you for taking this quiz!"</string>
     <string name="correct_answer">"The correct answer is: <xliff:g id="answer" example="1683">%s</xliff:g>"</string>
     <string name="final_score">"Your score is <xliff:g id="score" example="7">%d</xliff:g>/8."</string>
 
+    <!-- Strings for the UI -->
     <string name="logo">"logo"</string>
     <string name="result_icon">"result"</string>
     <string name="start">"Start Quiz"</string>
@@ -24,6 +26,7 @@
     <string name="results">"Results"</string>
     <string name="congrats">"Congratulations! "</string>
 
+    <!-- Strings for the quit confirmation dialog -->
     <string name="quit_message">"Are you sure you want to quit the quiz?"</string>
     <string name="quit_cancel">"Cancel"</string>
     <string name="quit_confirm">"Confirm"</string>
