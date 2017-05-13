@@ -23,4 +23,8 @@
     <string name="hint">"Answer here"</string>
     <string name="results">"Results"</string>
     <string name="congrats">"Congratulations! "</string>
+
+    <string name="quit_message">"Are you sure you want to quit the quiz?"</string>
+    <string name="quit_cancel">"Cancel"</string>
+    <string name="quit_confirm">"Confirm"</string>
 </resources>

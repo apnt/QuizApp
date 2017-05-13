@@ -1,6 +1,8 @@
 package com.example.android.quizapp;
 
+import android.app.AlertDialog;
 import android.content.ComponentName;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -33,13 +35,12 @@ public class QuestionActivity extends AppCompatActivity {
 
     /**
      * Override this method so that when the back button
-     * is pressed the app returns to the launch screen
+     * is pressed the app show a dialog in which the user
+     * will confirm quitting the quiz or cancel and continue
      */
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, LaunchActivity.class);
-        startActivity(intent);
-        finish();
+        showQuitConfirmationDialog();
     }
 
     @Override
@@ -161,5 +162,36 @@ public class QuestionActivity extends AppCompatActivity {
                                                                     // finished -> call the results activity
 
         return intent;
+    }
+
+    /**
+     * Prompt the user to confirm that they want to quit the quiz.
+     */
+    private void showQuitConfirmationDialog() {
+        // Create an AlertDialog.Builder and set the message, and click listeners
+        // for the positive and negative buttons on the dialog.
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(R.string.quit_message);
+        builder.setPositiveButton(R.string.quit_confirm, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked the "Confirm" button, so quit the quiz.
+                Intent intent = new Intent(getApplicationContext(), LaunchActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        builder.setNegativeButton(R.string.quit_cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked the "Cancel" button, so dismiss the dialog
+                // and continue editing the pet.
+                if (dialog != null) {
+                    dialog.dismiss();
+                }
+            }
+        });
+
+        // Create and show the AlertDialog
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
