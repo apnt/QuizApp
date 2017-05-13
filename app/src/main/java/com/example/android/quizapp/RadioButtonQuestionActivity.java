@@ -146,7 +146,6 @@ public class RadioButtonQuestionActivity extends QuestionActivity {
 
         if (!questionChoices[question.getCorrectAnswer()].isChecked()) {
             int userAnswerId = choicesRadioGroup.getCheckedRadioButtonId();
-            //Log.e("userAnswerId", "i = " + userAnswerId);
             if (userAnswerId > 0) {
                 RadioButton wrongRadioButton = (RadioButton) findViewById(userAnswerId);
                 wrongRadioButton.setBackgroundColor(ContextCompat.getColor(this, R.color.colorWrong));

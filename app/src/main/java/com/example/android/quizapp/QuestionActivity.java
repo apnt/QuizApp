@@ -112,7 +112,6 @@ public class QuestionActivity extends AppCompatActivity {
             intent.putExtra(EXTRA_SUMMARY, questionsSummary);
             startActivityForResult(intent, 0);
 
-            // remember to add finish()
             finish();
         } else if ( questionID == NUMBER_OF_QUESTIONS ) {       // if last question
             Intent intent = initializeIntent(nextQuestionClass);// initialize intent
@@ -135,7 +134,6 @@ public class QuestionActivity extends AppCompatActivity {
 
         String questionNumber = getString(R.string.question_array_identifier) + (questionID+1);
         int id = res.getIdentifier(questionNumber, "array", this.getPackageName());
-        //Log.e("check question " + questionID, "question id = " + id);
 
         questionStrings = res.getStringArray(id);
 
@@ -182,8 +180,7 @@ public class QuestionActivity extends AppCompatActivity {
         });
         builder.setNegativeButton(R.string.quit_cancel, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                // User clicked the "Cancel" button, so dismiss the dialog
-                // and continue editing the pet.
+                // User clicked the "Cancel" button, so continue with the quiz
                 if (dialog != null) {
                     dialog.dismiss();
                 }
